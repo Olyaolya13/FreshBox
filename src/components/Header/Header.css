@@ -1,0 +1,31 @@
+.header {
+  padding: 16px 30px 16px;
+  background-color: #f7f4ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 3px;
+}
+
+.header__title {
+  color: #ae1332;
+  font-size: 20px;
+  margin: 0;
+}
+
+.header__basket {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
