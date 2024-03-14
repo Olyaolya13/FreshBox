@@ -90,7 +90,7 @@ export default function TemporaryDrawer() {
         variant="text"
         onClick={toggleDrawer(true)}
         sx={{
-          color: '#AE1332',
+          color: '#3e3823',
           fontSize: '20px',
           fontWeight: 700,
           '&:hover': {

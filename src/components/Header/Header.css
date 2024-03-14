@@ -1,6 +1,6 @@
 .header {
   padding: 16px 30px 16px;
-  background-color: #f7f4ee;
+  background-color: #d1dad3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,13 +19,13 @@
 }
 
 .header__title {
-  color: #ae1332;
-  font-size: 20px;
+  color: #3e3823;
+  font-size: 30px;
   margin: 0;
 }
 
 .header__basket {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
 }

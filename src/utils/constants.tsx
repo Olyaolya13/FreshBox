@@ -3,5 +3,5 @@ export const NavigationData = {
 };
 
 export const HeaderData = {
-  logo: 'FRESH HARVEST BOX'
+  logo: 'FRESH BOX'
 };
