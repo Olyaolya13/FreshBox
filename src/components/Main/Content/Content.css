@@ -1,0 +1,43 @@
+.content {
+  margin: 73px 121px 116px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.content__title {
+  font-family: 'DMSans';
+  text-align: start;
+  font-size: 55px;
+  color: #121212;
+  margin: 0;
+}
+
+.content__subtitle {
+  font-family: 'DMSans';
+  text-align: start;
+  color: #7d7d7d;
+  margin: 0;
+  font-size: 20px;
+  margin-top: 36px;
+  margin-bottom: 45px;
+}
+
+.content__image {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 616px;
+}
+
+.content__picture {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 192px;
+  height: 192px;
+  border-radius: 15px;
+}

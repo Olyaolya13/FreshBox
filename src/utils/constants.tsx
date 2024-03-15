@@ -7,6 +7,8 @@ export const HeaderData = {
   box: 'Box'
 };
 
-export const SumbitBtnData = {
-  browse: 'Browse'
+export const ContentData = {
+  title: 'Fruits & Berries,',
+  titlePhrase: 'what the world craves',
+  subtitle: `Indulge in nature's sweetness`
 };

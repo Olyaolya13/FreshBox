@@ -44,15 +44,13 @@ export default function HeaderNavigation() {
 
   const theme = createTheme({
     typography: {
+      fontFamily: 'DMSans',
       fontSize: 15,
-      fontWeightRegular: 400
+      fontWeightMedium: 500
     },
     palette: {
       primary: {
         main: '#ff5722'
-      },
-      text: {
-        primary: '#111212'
       }
     }
   });
@@ -77,9 +75,24 @@ export default function HeaderNavigation() {
           role="navigation"
           sx={{ padding: 0 }}
         >
-          <LinkTab label="Home" href="/" sx={{ color: '#1D1D1D' }} disableRipple />
-          <LinkTab label="Shop" href="/shop" sx={{ color: '#1D1D1D' }} disableRipple />
-          <LinkTab label="Blog" href="/blog" sx={{ color: '#1D1D1D' }} disableRipple />
+          <LinkTab
+            label="Home"
+            href="/"
+            sx={{ color: '#1D1D1D', textTransform: 'none' }}
+            disableRipple
+          />
+          <LinkTab
+            label="Shop"
+            href="/shop"
+            sx={{ color: '#1D1D1D', textTransform: 'none' }}
+            disableRipple
+          />
+          <LinkTab
+            label="Blog"
+            href="/blog"
+            sx={{ color: '#1D1D1D', textTransform: 'none' }}
+            disableRipple
+          />
         </Tabs>
       </Box>
     </ThemeProvider>
