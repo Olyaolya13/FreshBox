@@ -79,7 +79,7 @@ export default function HeaderNavigation() {
         >
           <LinkTab label="Home" href="/" sx={{ color: '#1D1D1D' }} disableRipple />
           <LinkTab label="Shop" href="/shop" sx={{ color: '#1D1D1D' }} disableRipple />
-          <LinkTab label="Blog" href="/blog" sx={{ color: '#1D1D1D' }} />
+          <LinkTab label="Blog" href="/blog" sx={{ color: '#1D1D1D' }} disableRipple />
         </Tabs>
       </Box>
     </ThemeProvider>
