@@ -18,3 +18,11 @@ export const OrderStepsData = {
   subtitle:
     'Our baskets are carefully prepared and delivered to your door, ensuring fresh fruit enjoyment. Whether for snacking or gifting, our fruit and berry baskets are always top-notch'
 };
+
+export const BestselersData = {
+  title: 'Best selers'
+};
+
+export const ShopCardData = {
+  title: 'Add to cart'
+};

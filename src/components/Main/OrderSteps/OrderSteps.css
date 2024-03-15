@@ -1,5 +1,5 @@
 .steps {
-  background-color: #fafafa;
+  background-color: #f7f7f7;
   padding: 50px 121px 50px;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,6 @@
   margin: 0;
   font-size: 40px;
   font-weight: 500;
-  font-family: 'DMSans';
   line-height: 1.3em;
   width: 600px;
 }
