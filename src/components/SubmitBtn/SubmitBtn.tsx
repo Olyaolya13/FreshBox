@@ -4,17 +4,24 @@ import { styled } from '@mui/material/styles';
 interface SubmitBtnProps {
   title?: string;
   width?: string;
+  backgroundColor?: string;
+  hoverBackgroundColor?: string;
 }
 
-export default function SubmitBtn({ title, width }: SubmitBtnProps) {
+export default function SubmitBtn({
+  title,
+  width,
+  backgroundColor,
+  hoverBackgroundColor
+}: SubmitBtnProps) {
   const ColorButton = styled(Button)<ButtonProps>(() => ({
     fontFamily: 'DMSans',
     fontSize: 14,
     textTransform: 'none',
     color: '#fff',
-    backgroundColor: '#FF8F52',
+    backgroundColor: backgroundColor ? backgroundColor : '#FF8F52',
     '&:hover': {
-      backgroundColor: '#FFAB7E'
+      backgroundColor: hoverBackgroundColor ? hoverBackgroundColor : '#FFAB7E'
     },
     width: width
   }));

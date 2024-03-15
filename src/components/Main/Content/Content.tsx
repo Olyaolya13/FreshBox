@@ -1,7 +1,7 @@
 import './Content.css';
 import SumbitBtn from '../../SubmitBtn/SubmitBtn';
 import { ContentData } from '../../../utils/constants';
-import ContentImgBtn from '../../ContentImgBtn/ContentImgBtn';
+import ContentImgBtn from './ContentImgBtn/ContentImgBtn';
 
 export default function Content() {
   return (

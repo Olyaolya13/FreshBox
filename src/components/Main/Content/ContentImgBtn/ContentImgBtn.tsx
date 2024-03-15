@@ -3,12 +3,12 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import OrangeImg from '../../assets/ContentOrange.svg?react';
-import StrawberryImg from '../../assets/ContentStrawberry.svg?react';
-import BlueBettyImg from '../../assets/ContentBlueBerry.svg?react';
-import AppleImg from '../../assets/ContentApple.svg?react';
-import MelonImg from '../../assets/ContentMelon.svg?react';
-import LimeImg from '../../assets/ContentLime.svg?react';
+import OrangeImg from '../../../../assets/ContentOrange.svg?react';
+import StrawberryImg from '../../../../assets/ContentStrawberry.svg?react';
+import BlueBettyImg from '../../../../assets/ContentBlueBerry.svg?react';
+import AppleImg from '../../../../assets/ContentApple.svg?react';
+import MelonImg from '../../../../assets/ContentMelon.svg?react';
+import LimeImg from '../../../../assets/ContentLime.svg?react';
 
 const images = [
   {
@@ -125,10 +125,10 @@ export default function ButtonBaseDemo() {
         gap: '10px'
       }}
     >
-      {images.map(image => (
+      {images.map((image, index) => (
         <ImageButton
           focusRipple
-          key={image.title}
+          key={index}
           style={{
             width: image.width
           }}
