@@ -1,12 +1,7 @@
 import './Content.css';
 import SumbitBtn from '../../SubmitBtn/SubmitBtn';
-import OrangeImg from '../../../assets/ContentOrange.svg?react';
-import StrawberryImg from '../../../assets/ContentStrawberry.svg?react';
-import BlueBettyImg from '../../../assets/ContentBlueBerry.svg?react';
-import AppleImg from '../../../assets/ContentApple.svg?react';
-import MelonImg from '../../../assets/ContentMelon.svg?react';
-import LimeImg from '../../../assets/ContentLime.svg?react';
 import { ContentData } from '../../../utils/constants';
+import ContentImgBtn from '../../ContentImgBtn/ContentImgBtn';
 
 export default function Content() {
   return (
@@ -17,15 +12,7 @@ export default function Content() {
         <p className="content__subtitle">{ContentData.subtitle}</p>
         <SumbitBtn title="Explore the Orchard" width="180px" />
       </div>
-
-      <div className="content__image">
-        <MelonImg className="content__picture" />
-        <StrawberryImg className="content__picture" />
-        <BlueBettyImg className="content__picture" />
-        <OrangeImg className="content__picture" />
-        <LimeImg className="content__picture" />
-        <AppleImg className="content__picture" />
-      </div>
+      <ContentImgBtn />
     </section>
   );
 }
