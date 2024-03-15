@@ -1,5 +1,5 @@
 import './OrderSteps.css';
-import OrderStepsInstruction from './OrderStepsInstruction/OrderStepsInstruction';
+import OrderStepsCard from './OrderStepsCard/OrderStepsCard';
 import { OrderStepsData } from '../../../utils/constants';
 
 export default function OrderSteps() {
@@ -9,24 +9,26 @@ export default function OrderSteps() {
         <h2 className="steps__title">{OrderStepsData.title}</h2>
         <p className="steps__subtitle">{OrderStepsData.subtitle}</p>
       </div>
-      <OrderStepsInstruction
-        backgroundColor="#D5435F"
-        hoverBackgroundColor="#E75F79"
-        title="Step 1"
-        text="Browse through our selection of fresh fruits and berries and select the ones you'd like to include in your basket"
-      />
-      <OrderStepsInstruction
-        hoverBackgroundColor="#EED764"
-        backgroundColor="#e4ca47"
-        title="Step 2"
-        text="Select the basket icon and complete the order form."
-      />
-      <OrderStepsInstruction
-        hoverBackgroundColor="#97B044"
-        backgroundColor="#879f36"
-        title="Step 3"
-        text="Once you're satisfied with your selection, proceed to checkout your order. We'll take care of the rest!"
-      />
+      <div className="steps__card">
+        <OrderStepsCard
+          backgroundColor="#E2CE66"
+          hoverBackgroundColor="#EDDB81"
+          title="Step 1"
+          text="Browse our fresh fruit and berry selection to choose items for your basket"
+        />
+        <OrderStepsCard
+          backgroundColor="#F3B557"
+          hoverBackgroundColor="#FCC672"
+          title="Step 2"
+          text="Select the basket icon and complete the order form"
+        />
+        <OrderStepsCard
+          backgroundColor="#879f36"
+          hoverBackgroundColor="#97B044"
+          title="Step 3"
+          text="Once satisfied, proceed to checkout. We'll handle the rest!"
+        />
+      </div>
     </section>
   );
 }

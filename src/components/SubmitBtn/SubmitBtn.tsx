@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 interface SubmitBtnProps {
   title?: string;
   width?: string;
+  height?: string;
   backgroundColor?: string;
   hoverBackgroundColor?: string;
 }
@@ -12,7 +13,8 @@ export default function SubmitBtn({
   title,
   width,
   backgroundColor,
-  hoverBackgroundColor
+  hoverBackgroundColor,
+  height
 }: SubmitBtnProps) {
   const ColorButton = styled(Button)<ButtonProps>(() => ({
     fontFamily: 'DMSans',
@@ -23,7 +25,8 @@ export default function SubmitBtn({
     '&:hover': {
       backgroundColor: hoverBackgroundColor ? hoverBackgroundColor : '#FFAB7E'
     },
-    width: width
+    width: width,
+    height: height ? height : '40px'
   }));
   return (
     <ColorButton variant="contained" disableElevation>

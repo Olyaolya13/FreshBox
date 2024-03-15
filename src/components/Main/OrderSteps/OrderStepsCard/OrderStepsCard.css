@@ -1,0 +1,21 @@
+.steps-instruction__content {
+  background-color: #fff;
+  width: 389px;
+  height: 128px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 15px;
+  border: 0.5px solid #838383;
+}
+
+.steps-instruction__content:last-child {
+  margin-right: 0;
+}
+
+.steps-instruction__text {
+  font-size: 14px;
+  width: 166px;
+  margin: 0;
+}

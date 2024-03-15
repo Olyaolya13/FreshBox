@@ -14,7 +14,15 @@ export const ContentData = {
 };
 
 export const OrderStepsData = {
-  title: 'To order your delicious fruit and berry basket, simply follow these easy steps',
+  title: 'To order your delicious basket, simply follow these easy steps',
   subtitle:
-    'Our meticulously crafted baskets are prepared with utmost care and delivered directly to your doorstep, ensuring that you relish the flavors of fresh fruits without stepping out. Be it for a wholesome snack or a heartfelt present, our fruit and berry baskets are the epitome of excellence'
+    'Our baskets are carefully prepared and delivered to your door, ensuring fresh fruit enjoyment. Whether for snacking or gifting, our fruit and berry baskets are always top-notch'
+};
+
+export const BestselersData = {
+  title: 'Best selers'
+};
+
+export const ShopCardData = {
+  title: 'Add to cart'
 };

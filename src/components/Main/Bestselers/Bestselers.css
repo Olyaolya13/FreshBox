@@ -1,0 +1,22 @@
+.bestselers__title {
+  position: relative;
+  font-size: 32px;
+}
+
+.bestselers__title::before,
+.bestselers__title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 165px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.bestselers__title::before {
+  left: 457px;
+}
+
+.bestselers__title::after {
+  right: 457px;
+}
