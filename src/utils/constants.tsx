@@ -3,5 +3,6 @@ export const NavigationData = {
 };
 
 export const HeaderData = {
-  logo: 'FRESH BOX'
+  friut: 'Fruit',
+  box: 'Box'
 };

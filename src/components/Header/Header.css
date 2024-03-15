@@ -1,6 +1,6 @@
 .header {
   padding: 16px 30px 16px;
-  background-color: #d1dad3;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,13 +19,32 @@
 }
 
 .header__title {
-  color: #3e3823;
+  font-family: 'DMSans';
   font-size: 30px;
   margin: 0;
 }
 
+.header__title-friut {
+  color: #ff8f52;
+}
+
+.header__title-box {
+  color: #879f36;
+}
+
+.header__user {
+  display: flex;
+}
+
 .header__basket {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 29px;
+  cursor: pointer;
+}
+
+.header__account {
+  width: 25px;
+  height: 29px;
+  margin-right: 20px;
   cursor: pointer;
 }

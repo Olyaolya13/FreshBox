@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { NavigationData } from '../../utils/constants';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -7,11 +8,9 @@ import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { ThemeProvider } from '@mui/material/styles';
-import { createTheme } from '@mui/material/styles';
-import { NavigationData } from '../../utils/constants';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-export default function TemporaryDrawer() {
+export default function BurgerNavigation() {
   const [open, setOpen] = useState(false);
 
   const theme = createTheme({
@@ -26,7 +25,7 @@ export default function TemporaryDrawer() {
     setOpen(newOpen);
   };
 
-  const NavList = (
+  const BurgerList = () => (
     <Box
       sx={{
         width: 250,
@@ -85,24 +84,26 @@ export default function TemporaryDrawer() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Button
-        disableRipple
-        variant="text"
-        onClick={toggleDrawer(true)}
-        sx={{
-          color: '#3e3823',
-          fontSize: '20px',
-          fontWeight: 700,
-          '&:hover': {
-            backgroundColor: 'transparent'
-          }
-        }}
-      >
-        {NavigationData.menu}
-      </Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {NavList}
-      </Drawer>
+      <React.Fragment>
+        <Button
+          disableRipple
+          variant="text"
+          onClick={toggleDrawer(true)}
+          sx={{
+            color: '#3e3823',
+            fontSize: '20px',
+            fontWeight: 700,
+            '&:hover': {
+              backgroundColor: 'transparent'
+            }
+          }}
+        >
+          {NavigationData.menu}
+        </Button>
+        <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+          {BurgerList()}
+        </Drawer>
+      </React.Fragment>
     </ThemeProvider>
   );
 }
