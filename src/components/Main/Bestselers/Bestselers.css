@@ -1,6 +1,17 @@
+.bestselers {
+  margin: 50px 121px 50px;
+}
+
+.bestselers__card {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+
 .bestselers__title {
   position: relative;
   font-size: 32px;
+  margin: 0;
 }
 
 .bestselers__title::before,
@@ -14,9 +25,9 @@
 }
 
 .bestselers__title::before {
-  left: 457px;
+  left: 300px;
 }
 
 .bestselers__title::after {
-  right: 457px;
+  right: 300px;
 }
