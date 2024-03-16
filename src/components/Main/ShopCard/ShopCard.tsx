@@ -12,16 +12,17 @@ interface ShopCardProps {
   count?: string;
   title?: string;
   image?: string;
+  alt?: string;
 }
 
-export default function ShopCard({ count, title, image }: ShopCardProps) {
+export default function ShopCard({ count, title, image, alt }: ShopCardProps) {
   return (
     <Card sx={{ maxWidth: 220, height: 290, borderRadius: 2, padding: '10px' }}>
       <CardMedia
         component="img"
         height="200"
         image={image}
-        alt="Raspberry"
+        alt={alt}
         sx={{ borderRadius: 2 }}
       ></CardMedia>
       <CardContent sx={{ padding: 0 }}>

@@ -1,0 +1,23 @@
+.title__text {
+  position: relative;
+  font-size: 32px;
+  margin: 0;
+}
+
+.title__text::before,
+.title__text::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 165px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.title__text::before {
+  left: 300px;
+}
+
+.title__text::after {
+  right: 300px;
+}
