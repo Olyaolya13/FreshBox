@@ -1,11 +1,11 @@
 import './Bestselers.css';
-import BestselersPagination from '../BestelersPagination/BestelersPagination';
-import { BestselersData } from '../../../utils/constants';
+import BestselersPagination from './BestelersPagination/BestelersPagination';
+import Title from '../Title/Title';
 
 export default function Bestselers() {
   return (
     <section className="bestselers">
-      <h2 className="bestselers__title">{BestselersData.title}</h2>
+      <Title title="Best Selers" />
       <div className="bestselers__card">
         <BestselersPagination />
       </div>

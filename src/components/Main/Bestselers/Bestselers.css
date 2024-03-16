@@ -1,33 +1,9 @@
 .bestselers {
-  margin: 50px 121px 50px;
+  margin: 67px 121px 0;
 }
 
 .bestselers__card {
   display: flex;
   justify-content: center;
   margin-top: 33px;
-}
-
-.bestselers__title {
-  position: relative;
-  font-size: 32px;
-  margin: 0;
-}
-
-.bestselers__title::before,
-.bestselers__title::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 165px;
-  height: 1px;
-  background-color: #d9d9d9;
-}
-
-.bestselers__title::before {
-  left: 300px;
-}
-
-.bestselers__title::after {
-  right: 300px;
 }
