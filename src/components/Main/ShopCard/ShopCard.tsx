@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
 import Cart from '../../../assets/Cart.svg?react';
 import { ShopCardData } from '../../../utils/constants';
 

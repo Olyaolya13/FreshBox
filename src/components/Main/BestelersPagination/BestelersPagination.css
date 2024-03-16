@@ -1,0 +1,15 @@
+.bestsekers-pagination {
+  display: flex;
+  align-items: center;
+}
+
+.bestsekers-pagination__btn {
+  width: 32px;
+  height: 32px;
+  margin: 0 20px;
+}
+
+.bestsekers-pagination__cards {
+  display: flex;
+  gap: 20px;
+}
