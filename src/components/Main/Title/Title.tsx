@@ -2,6 +2,7 @@ import './Title.css';
 
 interface TitleProps {
   title?: string;
+  margin?: string;
 }
 
 export default function Title({ title }: TitleProps) {

@@ -2,7 +2,6 @@
 @import url(./vendor/fonts.css);
 
 .page {
-  max-width: 1440px;
   font-family: 'DMSans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.3;
   font-weight: '400';
@@ -17,5 +16,5 @@
 
 #root {
   padding: 0;
-  max-width: 1440px;
+  max-width: 1500px;
 }
