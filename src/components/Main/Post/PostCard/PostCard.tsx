@@ -54,19 +54,41 @@ export default function PostCard({
           alt={alt}
           sx={{ marginTop: '10px', borderRadius: 1 }}
         />
-        <CardContent sx={{ padding: '5px 0 22px 0' }}>
+        <CardContent
+          sx={{
+            padding: '10px 0 32px 0',
+            height: '130px',
+            overflow: 'hidden',
+            whiteSpace: 'wrap',
+            textOverflow: 'ellipsis'
+          }}
+        >
           <Typography
             sx={{ color: '#12121', textAlign: 'start', fontSize: '15px', fontWeight: 700 }}
           >
             {title}
           </Typography>
           <Typography
-            sx={{ color: '#7d7d7d', fontSize: '13px', textAlign: 'start', marginTop: '10px' }}
+            sx={{
+              color: '#7d7d7d',
+              fontSize: '13px',
+              textAlign: 'start',
+              marginTop: '10px'
+            }}
           >
             {description}
           </Typography>
         </CardContent>
-        <CardActions disableSpacing>
+        <CardActions
+          disableSpacing
+          sx={{
+            padding: '0',
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginLeft: '10px',
+            marginRight: '10px'
+          }}
+        >
           <CardLike countLike={countLike} onClick={onClick} />
           <SubmitBtn height="30px" title="Read more" />
         </CardActions>

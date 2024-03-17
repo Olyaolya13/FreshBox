@@ -23,7 +23,7 @@ export default function LikeCard({ countLike = 0, onClick }: CardLikeProps) {
   };
 
   return (
-    <CardActions disableSpacing sx={{ marginRight: '175px' }}>
+    <CardActions disableSpacing sx={{ padding: 0 }}>
       {isClickLike ? (
         <LikeOrange className="card-like" onClick={handleClickLike} />
       ) : (

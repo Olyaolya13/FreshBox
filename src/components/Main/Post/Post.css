@@ -1,3 +1,8 @@
 .post {
   margin: 107px 121px 0;
 }
+
+.post__card {
+  display: flex;
+  justify-content: space-between;
+}

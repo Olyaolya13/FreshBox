@@ -3,6 +3,7 @@ import Content from './Content/Content';
 import OrderSteps from './OrderSteps/OrderSteps';
 import Bestselers from './Bestselers/Bestselers';
 import Post from './Post/Post';
+import Comment from './Comments/Comments';
 
 export default function Main() {
   return (
@@ -11,6 +12,7 @@ export default function Main() {
       <OrderSteps />
       <Bestselers />
       <Post />
+      <Comment />
     </main>
   );
 }
