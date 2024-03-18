@@ -26,7 +26,23 @@ export const ContentData = {
 export const OrderStepsData = {
   title: 'To order your delicious basket, simply follow these easy steps',
   subtitle:
-    'Our baskets are carefully prepared and delivered to your door, ensuring fresh fruit enjoyment. Whether for snacking or gifting, our fruit and berry baskets are always top-notch'
+    'Our baskets are carefully prepared and delivered to your door, ensuring fresh fruit enjoyment. Whether for snacking or gifting, our fruit and berry baskets are always top-notch',
+  info: '* Hover over the steps for more information'
+};
+
+export const OrderStepsCardData = {
+  title: ['Choose', 'Place', 'Confirm'],
+  text: [
+    'Exploring our diverse range of fruits and berries to pick out your favorites',
+    'Place your order with ease and convenience, selecting your preferred delivery and payment options',
+    'Double-check your order and ensure all details are correct before confirming it'
+  ],
+  tooltip: [
+    "Check out our fruits and berries and choose the ones that interest you most. Don't hesitate to ask questions if you have any",
+    'Choose a convenient delivery method and fill out the necessary details so that your order is completed and delivered exactly as you wish',
+    'Please check all details carefully to avoid errors before confirming your order. Once confirmed, your order will be processed and delivered on time'
+  ],
+  backgroundColor: ['#E2CE66', '#F3B557', '#879f36']
 };
 
 export const ShopCardData = {

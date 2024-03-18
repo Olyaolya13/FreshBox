@@ -12,24 +12,6 @@
   align-items: center;
 }
 
-.steps__title,
-.steps__subtitle {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.3em;
-  width: 600px;
-}
-
-.steps__subtitle {
-  color: #7d7d7d;
-  font-size: 14px;
-  font-weight: 400;
-  width: 490px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
 .steps__card {
   display: flex;
 }
