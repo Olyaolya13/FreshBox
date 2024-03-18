@@ -73,3 +73,16 @@ export const BestelersPaginationData = {
   alt: ['Raspberry', 'Blueberry', 'Mango', ' Lime', 'Banana', 'Strawberry'],
   count: ['5', '6', '5', '4', '3', '6']
 };
+
+export const CommentCardReadData = {
+  title: ['Emily Smith', 'David Johnson', 'Samantha Williams', ' Michael Brown', 'Olivia Taylor'],
+  text: [
+    'Incredibly pleased with the quality of produce at FreshBox! The fruits and vegetables are always fresh and juicy. Thanks for your attention to detail!',
+    "Great selection of products and fast delivery! We always have 'FreshBox' on our table. We're thrilled with your service!",
+    'Very convenient to order groceries online from FreshBox. Never disappointed with the quality, and the prices are always reasonable. Very satisfied!',
+    'We love the variety of fruits and vegetables at FreshBox. It helps us diversify our diet and stick to a healthy lifestyle.',
+    "A fantastic choice for those who care about their health! FreshBox has become our weekly ritual, and we can't imagine our lives without your fresh produce!"
+  ],
+
+  readOnlyRatingValue: [5, 5, 4.5, 5, 4.5]
+};

@@ -1,19 +1,24 @@
-import { useState } from 'react';
-import { Typography, createTheme, ThemeProvider, Rating, Box } from '@mui/material';
+import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
+import Typography from '@mui/material/Typography';
+import Rating from '@mui/material/Rating';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-interface CommentCardProps {
-  user?: string;
+interface CommentCardReadProps {
+  title?: string;
   text?: string;
+  readOnlyRatingValue?: string;
 }
 
-export default function CommentCard({ user, text }: CommentCardProps) {
-  const [value, setValue] = useState<number | null>(2);
-
+export default function CommentCardRead({
+  title,
+  text,
+  readOnlyRatingValue
+}: CommentCardReadProps) {
   const theme = createTheme({
     typography: {
       fontFamily: 'DMSans',
-      fontSize: 18,
+      fontSize: 14,
       fontWeightRegular: 400
     },
     palette: {
@@ -29,7 +34,7 @@ export default function CommentCard({ user, text }: CommentCardProps) {
         sx={{
           '& > legend': { mt: 2 },
           backgroundColor: '#fff',
-          width: '350px',
+          width: '250px',
           height: '200px',
           padding: '20px',
           borderRadius: 1
@@ -46,7 +51,7 @@ export default function CommentCard({ user, text }: CommentCardProps) {
               marginLeft: '46px'
             }}
           >
-            <Typography sx={{ marginTop: '10px' }}>{user}</Typography>
+            <Typography>{title}</Typography>
             <Typography
               sx={{
                 marginTop: '10px',
@@ -54,21 +59,14 @@ export default function CommentCard({ user, text }: CommentCardProps) {
                 height: '115px',
                 textAlign: 'start',
                 overflow: 'hidden',
-                fontSize: '14px'
+                fontSize: '12px'
               }}
             >
               {text}
             </Typography>
           </Box>
         </Box>
-        <Rating
-          name="half-rating"
-          precision={0.5}
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-        />
+        <Rating name="half-rating" precision={0.5} value={{ readOnlyRatingValue }} readOnly />
       </Box>
     </ThemeProvider>
   );
