@@ -7,6 +7,7 @@ interface SubmitBtnProps {
   height?: string;
   backgroundColor?: string;
   hoverBackgroundColor?: string;
+  disableRipple?: boolean;
 }
 
 export default function SubmitBtn({
@@ -14,7 +15,8 @@ export default function SubmitBtn({
   width,
   backgroundColor,
   hoverBackgroundColor,
-  height
+  height,
+  disableRipple
 }: SubmitBtnProps) {
   const ColorButton = styled(Button)<ButtonProps>(() => ({
     fontFamily: 'DMSans',
@@ -29,7 +31,7 @@ export default function SubmitBtn({
     height: height ? height : '40px'
   }));
   return (
-    <ColorButton variant="contained" disableElevation>
+    <ColorButton variant="contained" disableElevation disableRipple={disableRipple}>
       {title}
     </ColorButton>
   );

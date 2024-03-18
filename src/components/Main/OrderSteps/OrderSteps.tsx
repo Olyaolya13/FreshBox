@@ -1,34 +1,66 @@
 import './OrderSteps.css';
 import OrderStepsCard from './OrderStepsCard/OrderStepsCard';
-import { OrderStepsData } from '../../../utils/constants';
+import { OrderStepsData, OrderStepsCardData } from '../../../utils/constants';
+import { Typography, createTheme, ThemeProvider } from '@mui/material';
 
 export default function OrderSteps() {
+  const theme = createTheme({
+    typography: {
+      fontFamily: 'DMSans',
+      fontSize: 15,
+      fontWeightRegular: 400
+    },
+    palette: {
+      primary: {
+        main: '#121212'
+      }
+    }
+  });
   return (
     <section className="steps">
-      <div className="steps__text">
-        <h2 className="steps__title">{OrderStepsData.title}</h2>
-        <p className="steps__subtitle">{OrderStepsData.subtitle}</p>
-      </div>
-      <div className="steps__card">
-        <OrderStepsCard
-          backgroundColor="#E2CE66"
-          hoverBackgroundColor="#EDDB81"
-          title="Step 1"
-          text="Browse our fresh fruit and berry selection to choose items for your basket"
-        />
-        <OrderStepsCard
-          backgroundColor="#F3B557"
-          hoverBackgroundColor="#FCC672"
-          title="Step 2"
-          text="Select the basket icon and complete the order form"
-        />
-        <OrderStepsCard
-          backgroundColor="#879f36"
-          hoverBackgroundColor="#97B044"
-          title="Step 3"
-          text="Once satisfied, proceed to checkout. We'll handle the rest!"
-        />
-      </div>
+      <ThemeProvider theme={theme}>
+        <div className="steps__text">
+          <Typography
+            sx={{ fontSize: '40px', fontWeight: 500, lineHeight: '1.3em', width: '600px' }}
+          >
+            {OrderStepsData.title}
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: '14px',
+              lineHeight: '1.3em',
+              width: '490px',
+              marginTop: '20px',
+              color: '#7d7d7d'
+            }}
+          >
+            {OrderStepsData.subtitle}
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: '11px',
+              lineHeight: '1.3em',
+              width: '300px',
+              marginTop: '10px',
+              marginBottom: '40px',
+              color: '#CDCDCC'
+            }}
+          >
+            {OrderStepsData.info}
+          </Typography>
+        </div>
+        <div className="steps__card">
+          {OrderStepsCardData.title.map((title, index) => (
+            <OrderStepsCard
+              key={index}
+              title={title}
+              text={OrderStepsCardData.text[index]}
+              tooltip={OrderStepsCardData.tooltip[index]}
+              backgroundColor={OrderStepsCardData.backgroundColor[index]}
+            />
+          ))}
+        </div>
+      </ThemeProvider>
     </section>
   );
 }
