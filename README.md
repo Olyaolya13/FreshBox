@@ -30,6 +30,22 @@ Card:
 
 - Strawberry <a href="https://www.freepik.com/free-photo/closeup-shot-fresh-ripe-strawberries-isolated-white-surface_20949014.htm#fromView=search&page=1&position=11&uuid=81905217-2753-4657-88ff-996a09d63fc3">Image by wirestock on Freepik</a>
 
+- Green apple <a href="https://www.freepik.com/free-photo/macro-shot-green-apple-isolated-white-background_3012365.htm#fromView=search&page=1&position=27&uuid=581521b5-900d-4468-884d-b01760bd2ab7">Image by rawpixel.com on Freepik</a>
+
+- Red apple <a href="https://www.freepik.com/free-psd/photo-apples-isolated-transparent-background_86396810.htm#fromView=search&page=1&position=29&uuid=581521b5-900d-4468-884d-b01760bd2ab7">Image by Vectonauta on Freepik</a>
+
+- Green grape <a href="https://www.freepik.com/free-photo/green-grapes-isolated-white_1007837.htm#fromView=search&page=1&position=13&uuid=be1c2062-4d72-4f63-bdef-131f5ca61889?log-in=google">Image by jannoon028</a> on Freepik
+
+- Limon <a href="https://www.freepik.com/free-psd/lemon-isolated-fruits-transparent-background_87825950.htm#fromView=search&page=1&position=16&uuid=fdd938d2-8364-4467-9a37-e37ad1a33e58">Image by tohamina on Freepik</a>
+
+- Dragon fruit <a href="https://www.freepik.com/free-photo/dragon-fruit-white-background_902082.htm#fromView=search&page=1&position=13&uuid=bf3185a8-4658-4ad8-8b52-c42228230735">Image by evening_tao on Freepik</a>
+
+- Cranberry <a href="https://www.freepik.com/free-psd/cranberry-isolated-transparent-background_87817973.htm#fromView=search&page=1&position=5&uuid=f591f1cb-43b6-4066-9a91-6c5935ed1e53">Image by tohamina on Freepik</a>
+
+- Black currant <a href="https://www.freepik.com/free-psd/blackcurrant-isolated-transparent-background_87330579.htm#fromView=search&page=1&position=43&uuid=22faaec5-2643-43d6-a933-3f545d77f766">Image by tohamina</a> on Freepik
+
+- Gooseberry <a href="https://www.freepik.com/free-psd/gooseberry-fruits-isolated-transparent-background_87821979.htm#fromView=search&page=1&position=1&uuid=164e3ffc-7abf-4232-bf13-699825e09f81">Image by tohamina on Freepik</a>
+
 Post:
 
 - Berries <a href="https://www.freepik.com/free-ai-image/abundant-berry-fruit-colorful-nature-background-generated-by-ai_42328645.htm#fromView=search&page=3&position=39&uuid=ae417b2c-498e-4497-89bd-1d90a4f5b262">Image by stockgiu on Freepik</a>
