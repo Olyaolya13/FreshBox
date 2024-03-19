@@ -1,0 +1,7 @@
+.shop-content__card {
+  margin: 40px 121px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  row-gap: 34px;
+  column-gap: 17px;
+}

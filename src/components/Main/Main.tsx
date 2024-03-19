@@ -1,4 +1,3 @@
-import './Main.css';
 import Content from './Content/Content';
 import OrderSteps from './OrderSteps/OrderSteps';
 import Bestselers from './Bestselers/Bestselers';

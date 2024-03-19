@@ -7,7 +7,7 @@ import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import PostAvatar from '../../../../assets/PostAvatar.svg?react';
 import SubmitBtn from '../../../SubmitBtn/SubmitBtn';
-import CardLike from '../../CardLike/CardLike';
+import CardLike from '../../CardLikeCount/CardLikeCount';
 
 interface PostCardProps {
   title?: string;

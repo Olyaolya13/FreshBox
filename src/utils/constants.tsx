@@ -46,7 +46,8 @@ export const OrderStepsCardData = {
 };
 
 export const ShopCardData = {
-  title: 'Add to cart'
+  title: 'Add to cart',
+  hit: 'HIT'
 };
 
 export const PostData = {
@@ -85,4 +86,11 @@ export const CommentCardReadData = {
   ],
 
   readOnlyRatingValue: [5, 5, 4.5, 5, 4.5]
+};
+
+export const ShopData = {
+  images: [Raspberry, Blueberry, Mango, Lime, Banana, Strawberry],
+  titles: ['Raspberry', 'Blueberry', 'Mango', ' Lime', 'Banana', 'Strawberry'],
+  alt: ['Raspberry', 'Blueberry', 'Mango', ' Lime', 'Banana', 'Strawberry'],
+  count: ['5', '6', '5', '4', '3', '6']
 };

@@ -1,4 +1,4 @@
-import './CardLike.css';
+import './CardLikeCount.css';
 import { useState } from 'react';
 import { CardActions, Typography } from '@mui/material';
 import LikeGrey from '../../../assets/LikeGrey.svg?react';
