@@ -17,7 +17,7 @@ export default function ShopContent() {
           count={allCounts[index]}
           alt={allAlts[index]}
           image={allImages[index]}
-          isHit={index < BestelersPaginationData.titles.length ? true : false}
+          isHit={index < ShopData.titles.length ? false : true}
         />
       ))}
     </div>

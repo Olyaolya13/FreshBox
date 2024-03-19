@@ -3,9 +3,13 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Shop from '../Shop/Shop';
 import Footer from '../Footer/Footer';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 const AppRouter: React.FC = () => {
+  const location = useLocation();
+
+  const isHomePage = location.pathname === '/';
+
   return (
     <main className="main">
       <Header />
@@ -13,7 +17,11 @@ const AppRouter: React.FC = () => {
         <Route path="/" element={<Main />} />
         <Route path="/shop" element={<Shop />} />
       </Routes>
-      <Footer />
+      {isHomePage && (
+        <div>
+          <Footer />
+        </div>
+      )}
     </main>
   );
 };

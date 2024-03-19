@@ -7,6 +7,14 @@ import Mango from '../assets/СardMango.svg';
 import Lime from '../assets/СardLime.svg';
 import Banana from '../assets/СardBanana.svg';
 import Strawberry from '../assets/СardStrawberry.svg';
+import Cranberry from '../assets/CardCranberry.svg';
+import DragonFruit from '../assets/CardDragonFruit.svg';
+import BlackCurrant from '../assets/CardBlackCurrant.svg';
+import Gooseberry from '../assets/CardGooseberry.svg';
+import GreenApple from '../assets/CardGreenApple.svg';
+import GreenGrape from '../assets/CardGreenGrape.svg';
+import Limon from '../assets/CardLimon.svg';
+import RedApple from '../assets/CardRedApple.svg';
 
 export const NavigationData = {
   menu: 'Menu'
@@ -89,8 +97,35 @@ export const CommentCardReadData = {
 };
 
 export const ShopData = {
-  images: [Raspberry, Blueberry, Mango, Lime, Banana, Strawberry],
-  titles: ['Raspberry', 'Blueberry', 'Mango', ' Lime', 'Banana', 'Strawberry'],
-  alt: ['Raspberry', 'Blueberry', 'Mango', ' Lime', 'Banana', 'Strawberry'],
-  count: ['5', '6', '5', '4', '3', '6']
+  images: [
+    Cranberry,
+    DragonFruit,
+    BlackCurrant,
+    Gooseberry,
+    GreenApple,
+    GreenGrape,
+    Limon,
+    RedApple
+  ],
+  titles: [
+    'Cranberry',
+    'Dragon Fruit',
+    'Black Currant',
+    'Gooseberry',
+    'Green Apple',
+    'Green Grape',
+    'Limon',
+    'RedApple'
+  ],
+  alt: [
+    'Cranberry',
+    'Dragon Fruit',
+    'Black Currant',
+    'Gooseberry',
+    'Green Apple',
+    'Green Grape',
+    'Limon',
+    'RedApple'
+  ],
+  count: ['8', '8', '6', '7', '3', '4', '3', '3']
 };
