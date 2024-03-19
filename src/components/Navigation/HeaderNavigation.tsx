@@ -67,30 +67,38 @@ export default function HeaderNavigation() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+      <Box
+        sx={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center'
+        }}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="nav tabs example"
           role="navigation"
-          sx={{ padding: 0 }}
+          sx={{
+            padding: 0
+          }}
         >
           <LinkTab
             label="Home"
             href="/"
-            sx={{ color: '#1D1D1D', textTransform: 'none' }}
+            sx={{ color: '#1D1D1D', textTransform: 'none', '&:hover': { opacity: 0.8 } }}
             disableRipple
           />
           <LinkTab
             label="Shop"
             href="/shop"
-            sx={{ color: '#1D1D1D', textTransform: 'none' }}
+            sx={{ color: '#1D1D1D', textTransform: 'none', '&:hover': { opacity: 0.8 } }}
             disableRipple
           />
           <LinkTab
             label="Blog"
             href="/blog"
-            sx={{ color: '#1D1D1D', textTransform: 'none' }}
+            sx={{ color: '#1D1D1D', textTransform: 'none', '&:hover': { opacity: 0.8 } }}
             disableRipple
           />
         </Tabs>

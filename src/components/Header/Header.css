@@ -19,6 +19,7 @@
   width: 32px;
   height: 29px;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 .header__account {
@@ -26,4 +27,10 @@
   height: 29px;
   margin-right: 20px;
   cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.header__basket:hover,
+.header__account:hover {
+  opacity: 0.8;
 }
