@@ -6,29 +6,9 @@
   align-items: center;
 }
 
-.header__logo {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.header__icon {
-  width: 20px;
-  height: 20px;
-  padding-right: 3px;
-}
-
 .header__title {
   font-size: 30px;
   margin: 0;
-}
-
-.header__title-friut {
-  color: #ff8f52;
-}
-
-.header__title-box {
-  color: #879f36;
 }
 
 .header__user {

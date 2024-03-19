@@ -36,7 +36,7 @@ export default function CommentCardRead({
           backgroundColor: '#fff',
           width: '300px',
           height: '140px',
-          padding: '20px',
+          padding: '15px',
           borderRadius: 1
         }}
       >
@@ -50,12 +50,12 @@ export default function CommentCardRead({
               width: '283px',
               alignItems: 'start',
               marginLeft: '11px',
-              height: '128px'
+              height: '118px'
             }}
           >
             <Typography
               sx={{
-                height: '40px',
+                height: '20px',
                 overflow: 'hidden'
               }}
             >
@@ -64,8 +64,7 @@ export default function CommentCardRead({
             <Typography
               sx={{
                 marginTop: '10px',
-                marginBottom: '10px',
-                height: '130px',
+                height: '95px',
                 textAlign: 'start',
                 overflow: 'hidden',
                 fontSize: '12px'
