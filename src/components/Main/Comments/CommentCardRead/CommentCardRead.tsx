@@ -7,7 +7,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 interface CommentCardReadProps {
   title?: string;
   text?: string;
-  readOnlyRatingValue?: string;
+  readOnlyRatingValue?: number | undefined;
 }
 
 export default function CommentCardRead({
@@ -34,9 +34,9 @@ export default function CommentCardRead({
         sx={{
           '& > legend': { mt: 2 },
           backgroundColor: '#fff',
-          width: '250px',
-          height: '200px',
-          padding: '20px',
+          width: '300px',
+          height: '140px',
+          padding: '15px',
           borderRadius: 1
         }}
       >
@@ -47,16 +47,24 @@ export default function CommentCardRead({
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
+              width: '283px',
               alignItems: 'start',
-              marginLeft: '46px'
+              marginLeft: '11px',
+              height: '118px'
             }}
           >
-            <Typography>{title}</Typography>
+            <Typography
+              sx={{
+                height: '20px',
+                overflow: 'hidden'
+              }}
+            >
+              {title}
+            </Typography>
             <Typography
               sx={{
                 marginTop: '10px',
-                marginBottom: '10px',
-                height: '115px',
+                height: '95px',
                 textAlign: 'start',
                 overflow: 'hidden',
                 fontSize: '12px'
@@ -66,7 +74,7 @@ export default function CommentCardRead({
             </Typography>
           </Box>
         </Box>
-        <Rating name="half-rating" precision={0.5} value={{ readOnlyRatingValue }} readOnly />
+        <Rating name="half-rating" precision={0.5} value={readOnlyRatingValue ?? 0} readOnly />
       </Box>
     </ThemeProvider>
   );

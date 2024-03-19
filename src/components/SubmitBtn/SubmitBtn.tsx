@@ -28,7 +28,8 @@ export default function SubmitBtn({
       backgroundColor: hoverBackgroundColor ? hoverBackgroundColor : '#FFAB7E'
     },
     width: width,
-    height: height ? height : '40px'
+    height: height ? height : '40px',
+    transition: 'background-color 0.3s ease'
   }));
   return (
     <ColorButton variant="contained" disableElevation disableRipple={disableRipple}>

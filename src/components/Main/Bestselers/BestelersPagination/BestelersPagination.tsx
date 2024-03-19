@@ -39,15 +39,24 @@ export default function BestelersPagination() {
     <div className="bestsekers-pagination">
       <BtnPaginationLeft className="bestsekers-pagination__btn" onClick={prevImage} />
       <div className="bestsekers-pagination__cards">
-        {[currentIndex, currentIndex + 1, currentIndex + 2, currentIndex + 3].map(index => (
-          <ShopCard
-            key={index}
-            title={BestelersPaginationData.titles[index % BestelersPaginationData.titles.length]}
-            alt={BestelersPaginationData.alt[index % BestelersPaginationData.alt.length]}
-            count={BestelersPaginationData.count[index % BestelersPaginationData.count.length]}
-            image={BestelersPaginationData.images[index % BestelersPaginationData.images.length]}
-          />
-        ))}
+        {[0, 1, 2, 3].map((_, index) => {
+          const actualIndex = currentIndex + index;
+          return (
+            <ShopCard
+              key={actualIndex}
+              title={
+                BestelersPaginationData.titles[actualIndex % BestelersPaginationData.titles.length]
+              }
+              alt={BestelersPaginationData.alt[actualIndex % BestelersPaginationData.alt.length]}
+              count={
+                BestelersPaginationData.count[actualIndex % BestelersPaginationData.count.length]
+              }
+              image={
+                BestelersPaginationData.images[actualIndex % BestelersPaginationData.images.length]
+              }
+            />
+          );
+        })}
       </div>
       <BtnPaginationRight className="bestsekers-pagination__btn" onClick={nextImage} />
     </div>

@@ -48,7 +48,7 @@ const images = [
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 192,
-  transition: theme.transitions.create('opacity'),
+  transition: `opacity 0.3s linear`,
   [theme.breakpoints.down('sm')]: {},
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
@@ -94,7 +94,7 @@ const ImageBackdrop = styled('span')(({ theme }) => ({
   bottom: 0,
   backgroundColor: theme.palette.common.black,
   opacity: 0,
-  transition: theme.transitions.create('opacity')
+  transition: `opacity 0.3s linear`
 }));
 
 const ImageMarked = styled('span')(({ theme }) => ({
@@ -103,9 +103,8 @@ const ImageMarked = styled('span')(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
   position: 'absolute',
   bottom: -2,
-  border: '1px solid currentColor',
   left: 'calc(50% - 9px)',
-  transition: theme.transitions.create('opacity')
+  border: '1px solid transparent'
 }));
 
 export default function ButtonBaseDemo() {

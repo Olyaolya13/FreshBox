@@ -34,7 +34,7 @@ export default function ShopCard({ count, title, image, alt }: ShopCardProps) {
           {title}
         </Typography>
       </CardContent>
-      <CardActions sx={{ padding: 0, paddingTop: '25px', margin: 0 }}>
+      <CardActions sx={{ padding: 0, paddingTop: '20px', margin: 0 }}>
         <Typography
           gutterBottom
           component="p"
@@ -54,7 +54,7 @@ export default function ShopCard({ count, title, image, alt }: ShopCardProps) {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            paddingLeft: '80px',
+            paddingLeft: '70px',
             '&:hover': {
               backgroundColor: 'transparent'
             }
