@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import { createTheme, ThemeProvider } from '@mui/material';
-
-interface LinkTabProps {
-  label?: string;
-  href?: string;
-  selected?: boolean;
-}
+import { createTheme, ThemeProvider, Box, Tabs, Tab } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function samePageLinkNavigation(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
   if (
@@ -22,21 +14,6 @@ function samePageLinkNavigation(event: React.MouseEvent<HTMLAnchorElement, Mouse
     return false;
   }
   return true;
-}
-
-function LinkTab(props: LinkTabProps) {
-  return (
-    <Tab
-      component="a"
-      onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        if (samePageLinkNavigation(event)) {
-          event.preventDefault();
-        }
-      }}
-      aria-current={props.selected && 'page'}
-      {...props}
-    />
-  );
 }
 
 export default function HeaderNavigation() {
@@ -83,21 +60,24 @@ export default function HeaderNavigation() {
             padding: 0
           }}
         >
-          <LinkTab
+          <Tab
             label="Home"
-            href="/"
+            to="/"
+            component={Link}
             sx={{ color: '#1D1D1D', textTransform: 'none', '&:hover': { opacity: 0.8 } }}
             disableRipple
           />
-          <LinkTab
+          <Tab
             label="Shop"
-            href="/shop"
+            to="/shop"
+            component={Link}
             sx={{ color: '#1D1D1D', textTransform: 'none', '&:hover': { opacity: 0.8 } }}
             disableRipple
           />
-          <LinkTab
+          <Tab
             label="Blog"
-            href="/blog"
+            to="/blog"
+            component={Link}
             sx={{ color: '#1D1D1D', textTransform: 'none', '&:hover': { opacity: 0.8 } }}
             disableRipple
           />

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './BestelersPagination.css';
-import ShopCard from '../../ShopCard/ShopCard';
+import ShopCard from '../../../Shop/ShopCard/ShopCard';
 import BtnPaginationLeft from '../../../../assets/BtnPaginationLeft.svg?react';
 import BtnPaginationRight from '../../../../assets/BtnPaginationRight.svg?react';
 import { BestelersPaginationData } from '../../../../utils/constants';
